@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:layout_marginTop="-48dp"
+        android:src="@drawable/ic_wave__1_" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/amethysta"
+        android:text="LogIn Your Account  "
+        android:textColor="#000"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/Emailid"
+        android:layout_width="650dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edit_text_box"
+        android:hint="Email-Id"
+        android:textColor="#000"
+        android:textColorHint="#8D8585"
+        android:textSize="17dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+
+        />
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="650dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_box"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Password"
+        android:textColor="#000"
+        android:textColorHint="#8D8585"
+        android:textSize="17dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/Emailid"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10dp"
+        />
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/pass"
+        android:layout_marginTop="30dp"
+        >
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are your agree with all the Terms and Conditions"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/createAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="Create Your Account"
+        android:textColor="#53c1f3"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/go_to_next"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:text="Go to Next"
+        android:textSize="10dp" />
+
+
+</RelativeLayout>
